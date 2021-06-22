@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Grades Tracker | Home</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">
+            Grades Tracker
+        </h1>
+    </header>
+    <main>
+        <section class="student-form">
+            <form class="form">
+                <div class="input-group">
+                    <label for="student-name" class="input-label">Student Name</label>
+                    <input type="text" class="input-text" id="studentName" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="student-course" class="input-label">Student Course</label>
+                    <select name="courses" id="studentCourse" required>
+                        <option value="math" selected>Math</option>
+                        <option value="english">English</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="art">Art</option>
+                        <option value="science">Science</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit Query</button>
+
+            </form>
+        </section>
+
+        <section class="grades-tabel">
+            <table class="tabel">
+                <tr class="tabel-heading">
+                    <th>Student Name</th>
+                    <th>Student Grade</th>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
